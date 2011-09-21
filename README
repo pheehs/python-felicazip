@@ -1,4 +1,4 @@
-﻿README
+README
 ・What's this?
 　　このプログラムは、PaSoRiを使って、FeliCaのIDmから生成したパスワードでファイル/フォルダの自動的な暗号化・復号化を行うものです。
 　　実際には、IDmのSHA256ハッシュ値をパスワードとして、与えられたファイル/フォルダをパスワード付き7-zipアーカイブに圧縮しているだけです。
@@ -7,10 +7,10 @@
 ・実行環境
 　　PythonをインストールしたWindows2000/XP/Vista/7
 　　
-　　秋田 稔氏開発の7-ZIP32.DLL for windows 32bits(http://www.madobe.net/archiver/lib/7-zip32.html)をウェブサイトからダウンロードし、インストールしておいてください。
-　　PaSoRiの制御に使わせていただいたfelicalib.dllはfelicalib(http://felicalib.tmurakam.org/)を開発したTakuya Murakami氏に著作権があります。
-　　felicalibではFeliCaポートソフトウェア(http://www.sony.co.jp/Products/felica/pcrw/)に含まれるfelica.dllを使っているそうなので、こちらのインストールも必要です。
+　　秋田 稔氏開発の7-ZIP32.DLL for windows 32bits(http://www.madobe.net/archiver/lib/7-zip32.html )をウェブサイトからダウンロードし、インストールしておいてください。
+　　PaSoRiの制御に使わせていただいたfelicalib.dllはfelicalib(http://felicalib.tmurakam.org/ )を開発したTakuya Murakami氏に著作権があります。
+　　felicalibではFeliCaポートソフトウェア(http://www.sony.co.jp/Products/felica/pcrw/ )に含まれるfelica.dllを使っているそうなので、こちらのインストールも必要です。
 
 ・開発で参考にしたサイト
 　　http://takanory.net/takalog/824
-  　http://handasse.blogspot.com/2008/03/python-pasorisuica.html
+　　http://handasse.blogspot.com/2008/03/python-pasorisuica.html

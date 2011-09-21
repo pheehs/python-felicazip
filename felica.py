@@ -1,10 +1,10 @@
 ﻿#!/usr/bin/env python
 #-*- coding:utf-8 -*-
 
-import os
+import os.path
 from ctypes import *
 from ctypes.wintypes import HINSTANCE
-flib = cdll.felicalib
+flib = CDLL(os.path.join(os.path.dirname(__file__), "felicalib.dll"))
 
 POLLING_ANY = 0xFFFF
 POLLING_SUICA = 0x0003

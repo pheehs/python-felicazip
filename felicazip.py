@@ -27,13 +27,13 @@ def SevenZip(cmd):
     #a {output name} {input file(s)} -t7z -p{password} -mhe -mx={level}
     #x {input file} -t7z -p{password}
     """
-    log(u"*" * 50)
+    log("\n"+u"*" * 50)
     lib7z.SevenZip.argtypes = [c_long, c_char_p, c_char_p, c_ulong]
     hwnd = c_long()
     resbuf = c_buffer(5000)
     res = lib7z.SevenZip(hwnd, cmd, resbuf, sizeof(resbuf))
     print resbuf.value[2:-2].replace("\r", "").replace("\n\n", "\n")
-    log(u"*" * 50)
+    log(u"*" * 50+"\n")
     if res != 0:
         return False
     else:
