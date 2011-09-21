@@ -44,10 +44,10 @@ def Encrypt(inpath, outpath, passwd, level=5):
         % (outpath, inpath, passwd, level)
     res = SevenZip(cmd)
     if res == True:
-        log(u"暗号化完了！")
+        log(u"暗号化完了！\n")
         return True
     else:
-        log(u"暗号化失敗！")
+        log(u"暗号化失敗！\n")
         return False
 
 def Decrypt(inpath, outpath, passwd):
@@ -55,10 +55,10 @@ def Decrypt(inpath, outpath, passwd):
         % (inpath, outpath, passwd)
     res = SevenZip(cmd)
     if res == True:
-        log(u"復号化完了！")
+        log(u"復号化完了！\n")
         return True
     else:
-        log(u"復号化失敗！")
+        log(u"復号化失敗！\n")
         return False
     
 def CheckArchive(filepath, level=0):
