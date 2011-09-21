@@ -9,7 +9,7 @@ from felica import PaSoRiReader
 from hashlib import sha256
 from ctypes import *
 
-lib7z = WinDLL(os.path.join(os.path.dirname(__file__), "7-zip32.dll"))
+lib7z = WinDLL("7-zip32.dll")
 
 usage =  u"%prog (-e/-d/-c) INPUT_FILE [-o output file(directory)]"
 version = u"%prog 0.1"
